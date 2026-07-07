@@ -17,7 +17,9 @@
   </Folder>
   <Folder Name="/2.Document/" />
   <Folder Name="/2.Libraries/" />
-  <Folder Name="/3.EntryPoint/" />
+  <Folder Name="/3.EntryPoint/">
+    <Project Path="src/AigioLTemplate.ConsoleApp/AigioLTemplate.ConsoleApp.csproj" Id="a1b30de9-3674-4e4e-b9e3-01c71b4897f0" />
+  </Folder>
   <Folder Name="/4.Tools/" />
   <Folder Name="/5.UnitTest/" />
 </Solution>

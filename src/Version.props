@@ -1,8 +1,14 @@
 <Project>
 
+	<!-- 👇 当前项目的版本号配置 -->
+	<PropertyGroup>
+		<!--(yyyy-2024||A).B.(yyyy-2024)MMdd.1hhC-->
+		<Version>1.0.20707.12024</Version>
+	</PropertyGroup>
+
 	<!-- 👇 当前项目依赖的版本号配置 -->
 	<PropertyGroup>
-		<!--👇 首选 .NET 版本号 -->
+		<!-- 👇 首选 .NET 版本号 -->
 		<DotNet_Version>10.0</DotNet_Version>
 		<!--👇 Win10/11 SDK 版本，值不可小于 10.0.x -->
 		<WinSDK_Version>10.0.19041.0</WinSDK_Version>

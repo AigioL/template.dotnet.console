@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net$(DotNet_Version)</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<AssemblyName>aigioltemplate</AssemblyName>
+		<RootNamespace>AigioLTemplate</RootNamespace>
+		<PublishAot>true</PublishAot>
+	</PropertyGroup>
+
+	<!-- 👇 Release 配置中不生成程序集文档与 pdb 调试符号 -->
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<AllowedReferenceRelatedFileExtensions>
+			<!-- Prevent default XML and PDB files copied to output in RELEASE. 
+				 Only *.allowedextension files will be included, which doesn't exist in my case.
+			-->
+			.allowedextension
+		</AllowedReferenceRelatedFileExtensions>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+	</PropertyGroup>
+
+</Project>

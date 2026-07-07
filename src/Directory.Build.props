@@ -21,11 +21,6 @@
 		<ImplicitUsings>true</ImplicitUsings>
 	</PropertyGroup>
 
-	<!-- 👇 程序集信息 -->
-	<PropertyGroup>
-		<Version>1.0.0.0</Version>
-	</PropertyGroup>
-
 	<!-- 👇 CompilerVisibleProperty 配置源生成器中 MSBuild Property 可见性 -->
 	<ItemGroup>
 		<CompilerVisibleProperty Include="Deterministic" />
